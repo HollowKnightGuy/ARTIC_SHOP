@@ -1,0 +1,1187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+
+:root{
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'League Gothic', sans-serif;
+    --background-color: rgb(243, 243, 243);
+    --footer-bgcolor:rgb(224, 224, 224);
+    --index-hover-bgcolor: #eaeaea;
+}
+
+
+
+
+
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: var(--primary-font);
+    height: 100%;
+    background-color: var(--background-color);
+}
+
+.index-body{
+    background-color: var(--footer-bgcolor);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+/* HEADER */
+
+
+
+
+
+header{
+    background-color: transparent;
+    width: 100%;
+    height: 130px;
+    text-align: center;
+}
+
+.index-header{
+    position: absolute;
+}
+
+.header_img{
+    width: 130px;
+    margin-top: 20px;
+}
+
+h1{
+    position: relative;
+    margin-top: 20px;
+    right: 15px;
+    bottom: 20px;
+    display: inline-block;
+    font-size: 3.5em;
+}
+
+.index_h1{
+    color: white;
+}
+
+@keyframes searchscroll{
+    0%{
+        top: 10px;
+        opacity: 0%;
+    }
+
+    100%{
+        top: 40px;
+        opacity: 100%;
+    }
+}
+
+@keyframes magnglass{
+    0%{
+        width: 48px;
+        opacity: 0;
+    }
+
+    100%{
+        width: 88px;
+        opacity: 100%;
+    }
+}
+
+@keyframes profbagscroll{
+    0%{
+        top: 10px;
+        opacity: 0;
+    }
+
+    100%{
+        top: 40px;
+        opacity: 100%;
+    }
+}
+
+.lupa{
+    background-color: var(--background-color);
+    position: absolute;
+    width: 48px;
+    text-align: right;
+    top: 40px;
+    animation: magnglass 2s;
+    animation-fill-mode: forwards;
+}
+
+.lupaimg{
+    width: 40px;
+    cursor: pointer;
+}
+
+
+.buscador{
+    font-family: var(--primary-font);
+    background-color: var(--background-color);
+    position: absolute;
+    width: 260px;
+    top: 10px;
+    left: 100px;
+    padding: 3px;
+    font-size: 1.3em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    outline: none;
+    animation: searchscroll 2s;
+    animation-fill-mode: forwards;
+}
+
+.buscador:focus{
+    border-bottom: 3px solid black;
+    transition: all 150ms ease;
+}
+
+.perfil-carrito{
+    position: absolute;
+    right: 88px;
+    top: 35px;
+    animation: profbagscroll 2s;
+    animation-fill-mode: forwards;
+}
+
+.perfil-carrito img{
+    width: 40px;
+    cursor: pointer;
+}
+
+.perfil-carrito img:first-child{
+    position: relative;
+    width: 50px;
+    top: 5px;
+}
+
+
+
+
+
+
+
+/* VIDEO */
+
+
+
+
+
+
+
+
+.index-main__video{
+    position: relative;
+    width: 100%;
+    z-index: -100;
+}
+
+
+
+
+
+
+
+
+/* INDEX TEXTO */
+
+
+
+
+
+
+
+
+
+.index-text{
+    position: relative;
+    width: 1100px;
+    height: 40px;
+    margin: auto;
+    bottom: 200px;
+    display: flex;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    font-size: 2.1em;
+    overflow: hidden;
+    z-index: -50;
+}
+
+.animacion{
+    position: relative;
+    width: 190px;
+    margin-right: 8px;
+    text-align: right;
+    overflow: hidden;
+    animation: textwrap 12s infinite;
+}
+
+.quienessomos{
+    position: relative;
+    width: 85%;
+    margin: 80px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.quienessomos h2{
+    font-size: 3em;
+}
+
+.quienessomos p{
+    position: absolute;
+    width: 40.9%;
+    margin-top: 80px;
+}
+
+.quienessomos img{
+    width: 600px;
+    border-radius:8px;
+}
+
+@keyframes inputborder{
+    0%{
+        border: 0;
+    }
+
+    100%{
+        border-bottom: 2px solid black;
+    }
+}
+
+.contacto{
+    position: relative;
+    width: 50%;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 150px;
+}
+
+.contacto h2{
+    height: fit-content;
+    font-size: 2em;
+}
+
+.contacto form{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+
+}
+
+.contacto input, textarea{
+    background-color: var(--background-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    z-index: 130;
+}
+
+.nombre, .email{
+    width: 45%;
+    padding: 15px;
+
+}
+
+.email{
+    margin-left: 55%;
+}
+
+
+.nombre:focus, .email:focus, .descripcion:focus{
+    animation: inputborder 80ms;
+    animation-fill-mode: forwards
+}
+
+.descripcion{
+    width: 100%;
+    height: 240px;
+    margin-top: 60px;
+    padding: 15px;
+}
+
+.index-submit{
+    position: relative;
+    height: 50px;
+    width: 103.5%;
+    margin-top: 350px;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.index-submit:hover, .completado a:hover{
+    background-color: black;
+    color: white;
+    letter-spacing: 4px;
+}
+
+
+
+
+
+
+
+
+/* ANIMACION INDEX TEXTO */
+
+
+
+
+
+
+
+
+
+@keyframes textwrap{
+    0%{margin-top: 0;}
+    20%{margin-top: 0;}
+
+    25%{margin-top: -41px;}
+    50%{margin-top: -41px;}
+
+    55%{margin-top: -81px;}
+    80%{margin-top: -81px;}
+    
+    100%{margin-top: 0px;}
+}
+
+
+
+
+
+
+
+
+
+/* MENU */
+
+
+
+
+
+
+
+
+
+
+nav{
+    position: relative;
+    top: 130px;
+}
+
+.index_nav ul li a{
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+.menu{
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+.divisions--menu{
+    top: 0;
+    z-index: 100;
+}
+
+.menu li > a{
+    background: transparent;
+    min-width: 100px;
+    padding: 20px 80px;
+    display: block;
+    color: black;
+    border-radius: 6px;
+    transition: all 500ms ease;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.menu > li > a::before{
+    content: "";
+    background-color: var(--index-hover-bgcolor);
+    position: absolute;
+    width: 0;
+    height: 100%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    z-index: -1;
+}
+
+.menu li > a:hover{
+    color: #000;
+    border: 1px solid rgb(190, 190, 190);
+    
+}
+
+.menu > li > a:hover::before{
+    width: 100%;
+    border-radius: 6px;
+}
+
+.menu > li{
+    position: relative;
+    text-align:center;
+}
+
+.menu > li > ul{
+    background: transparent;
+    position: absolute;
+    display: none;
+}
+
+.menu > li > ul > li > a{
+    margin-top: 10px;
+    color: white;
+}
+
+.link-desplegable:hover{
+    background-color: var(--background-color);
+}
+
+.link-desplegable2:hover{
+    background-color:var(--index-hover-bgcolor);
+}
+
+
+.divisions--menu ul > li > ul > li > a{
+    background-color: var(--background-color);
+    color: black;
+}
+
+
+.desplegable:hover > ul {
+    display:block;
+}
+
+
+
+
+
+
+
+
+
+
+/* TABLA DE TALLAS */
+
+
+
+
+
+
+
+
+
+
+
+.fondo-tallas{
+    display: none;
+}
+
+.fondo-tallas::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 300vh;
+    opacity: 80%;
+    top: 0;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.tallas{
+    background-color: white;
+    position: fixed;
+    width: 60%;
+    height: 600px;
+    margin-top: -50px;
+    margin-left: 20%;
+    border-radius: 4px;
+    opacity: 100%;
+    translate: (0, -50%);
+    z-index: 150;
+}
+
+.tallas h2{
+    position: absolute;
+    width: 100%;
+    margin: 5% 0;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+table{    
+    position: absolute;
+    margin: 0 9.5%;
+    text-align: center;
+}
+
+
+.tabla1{
+    margin-top: 150px;
+}
+
+.tabla2{
+    margin-top: 380px;
+}
+
+td{
+    margin: 50px;
+    padding: 0px 30px;
+    border-bottom: 1px solid var(--footer-bgcolor);
+    line-height: .5em;
+}
+
+
+
+table tr td:first-child{
+    text-align: left;
+}
+
+
+table tr:nth-child(2) td{
+    background-color: var(--footer-bgcolor);
+}
+
+table th{
+    background-color: black;
+    margin-bottom: 10px;
+    padding: 8px;
+    color: white;
+    border-radius: 3px;
+
+}
+
+.celda-ancha{
+    position: relative;
+    width: 300px;
+    padding: 10px;
+}
+
+.cruz{
+    position: absolute;
+    margin-left: 90%;
+    margin-top: 4%;
+    width: 40px;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.regla{
+    width: 30px;
+}
+
+.guiatallas{
+    position: absolute;
+    margin-left: 80%;
+    top: 260px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 50;
+    transition: all 500ms ease;
+}
+
+.guiatallas:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid var(--footer-bgcolor);
+    border-radius: 8px;
+    transition: all 500ms ease;
+}
+
+input[id="tallas"]:checked ~ .fondo-tallas{
+    display: block;
+}
+
+
+input[id="tallas"]:disabled ~ .fondo-tallas{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/* ARTICULOS DE LA TIENDA */
+
+
+
+
+
+
+
+
+
+
+@keyframes article-info{
+    0%{
+        display: none;
+    }
+
+    100%{
+        display: block;
+    }
+}
+
+
+
+.ropa{
+    position: relative;
+    width: 85%;
+    margin: auto;
+    top: 40px;
+}
+
+.ropa h2{
+    margin-top: 80px;
+    padding-left: 40px;
+    font-size: 3em;
+}
+
+.articulos{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.articulo{
+    position: relative;
+    width: 300px;
+    height: fit-content;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.articulo img{
+    width: 95%;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.informacion-articulo{
+    position: absolute;
+    width: 95%;
+    height: 335.21px;
+    margin: 10px;
+    top: 0;
+    border-radius: 5px;
+    transition: all 500ms ease;
+    z-index: -1;
+    opacity: 0;
+}
+
+.informacion-articulo::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 335.21px;
+    background-color: black;
+    opacity: 70%;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.cruz-blanca{
+    position: absolute;
+    z-index: 5;
+    width: 20px;
+    right: 20px;
+}
+
+.nombre-ropa{
+    width: 80%;
+    margin: 35px auto 0 auto;
+}
+
+.texto-ropa{
+    position: sticky;
+    font-family: var(--secondary-font);
+    color: white;
+    font-size: 2em;
+    z-index: 2;
+}
+
+.precio{
+    position: sticky;
+    margin-left: 30px;
+    color: white;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.talla{
+    position: absolute;
+    background-color: black;
+    width: 80px;
+    height: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 380ms ease;
+}
+
+.talla:hover{
+    transition: all 380ms ease;
+    box-shadow: 0 0 4px white;
+}
+
+.comprar{
+    position: absolute;
+    background-color: white;
+    font-family: var(--secondary-font);
+    display: block;
+    font-size: 1.3em;
+    width: 80%;
+    left: 20px;
+    bottom: 20px;
+    padding: 10px 5px;
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: all 500ms ease;
+    text-align: center;
+    font-weight: 300;
+    z-index: 2;
+}
+
+.comprar:hover{
+    background-color: black;
+    color: white;
+    transition: all 500ms ease;
+}
+
+.checkbox-img:checked ~ .informacion-articulo{
+    z-index: 5;
+    opacity: 100%;
+    transition: all 500ms ease;
+}
+
+section{
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section h3{
+    width: 100%;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+
+.notblacksection{
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+/* PASARELA DE PAGO */
+
+
+
+
+
+
+
+
+
+
+
+.header_pasarela{
+    height: 100px;
+}
+
+.header_pasarela a{
+    position: absolute;
+    right: 60px;
+
+}
+
+.estado_proceso{
+    position: absolute;
+    top: 40px;
+    margin-left: 3%;
+    display: flex;
+}
+
+.border-bottom{
+    border-bottom: 2px solid black;
+}
+
+.estado_proceso li{
+    margin: 5px;
+    padding: 15px;
+    list-style-type: none;
+    letter-spacing: 2px;
+}
+
+.estado_proceso div, .volver{
+    background-color: black;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    top: 5px;
+    color: white;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.estado_proceso div span{
+    position: absolute;
+    right: 25%;
+    bottom: 9%;
+    font-size: .8em;
+}
+
+.pasarela-hr{
+    color: var(--footer-bgcolor);
+}
+
+.pasarela{
+    position: relative;
+    height: fit-content;
+    width: 65%;
+    margin: 60px 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+input{
+    width: 40%;
+}
+
+.input-grande{
+    width: 100%;
+    
+}
+
+
+.pasarela input, .submit{
+    margin: 2.2%;
+    padding: 20px;
+    border: 1.4px solid black;
+    border-radius: 0;
+    outline: none;
+    transition: all 250ms ease;
+}
+
+.pasarela input:focus{
+    transition: all 250ms ease;
+    box-shadow: 0 0 3px black;
+}
+
+.pago-form{
+    display: block;
+    margin: 0;
+}
+
+.pasarela-pago input{
+    width: 100%;
+}
+
+.pasarela-pago input:last-child{
+    width: 35%;
+}
+
+.pasarela-pago{
+    width: 30%;
+}
+
+.submit{
+    position: absolute;
+    background-color: black;
+    width: 15%;
+    font-weight: bolder;
+    font-size: .9em;
+    color: white;
+    box-shadow: 4px 4px 1px black;
+    transition: all 500ms ease;
+    bottom: -140px;
+    margin-left: 2%;
+}
+
+
+.submit:hover{
+    background: white;
+    color: black;
+    box-shadow: 4px 4px 1px rgb(151, 149, 149);
+    transition: all 500ms ease;
+    cursor: pointer;
+    letter-spacing: 4px;
+}
+
+.resumen-pago{
+    position: absolute;
+    background-color: var(--footer-bgcolor);
+    width: 50%;
+    height: 900px;
+    right: 0;
+    top: 101px;
+    text-align: center;
+    z-index: 110;
+}
+
+.resumen-pago ul{
+    margin-top: 100px;
+}
+
+.resumen-pago h2, .completado h1{
+    font-size: 2em;
+}
+
+.resumen-pago p{
+    font-size: 2em;
+}
+
+.resumen-pago img{
+    width: 200px;
+}
+
+.animacion-completado{
+    width: 250px;
+    margin-top: 90px;
+}
+
+.completado{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.completado a{
+    position: relative;
+    top: 100px;
+    background-color: black;
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+    transition: all 500ms ease;
+}
+
+
+/* FOOTER */
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: rgb(224, 224, 224);
+    position: relative;
+    width: 100%;
+    height: 330px;
+    bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 120;
+}
+
+.divisions-footer{
+    position: relative;
+    height: 400px;
+    margin-top: 220px;
+    bottom: 0;
+}
+
+.footer__secciones{
+    position: relative;
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.seccion-logo{
+    position: relative;
+    margin-top: 20px;
+}
+
+.seccion{
+    position: relative;
+    margin-top: 20px;
+}
+
+.seccion span{
+    font-family: var(--secondary-font);
+    font-size: 1.2em;
+    text-shadow: 1px 1px 1px white;
+}
+
+.seccion ul{
+    position: relative;
+    margin-top: 10px;
+}
+
+.seccion li{
+    margin-top: 20px;
+    font-weight: 400
+}
+
+.footer__barrainferior{
+    position: relative;
+    width: 100%;
+    margin: 65px 0 40px 62px;  
+}
+
+.footer__barrainferior ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__barrainferior ul li{
+    margin: 20px;
+}
+
+footer a:hover{
+    color: rgb(100, 100, 100);
+    text-decoration: underline;
+}
+
+.footer__barrainferior ul li::after{
+    margin-left: 38px;
+    content: " |";
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY */
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1480px){
+    .tallas{
+        height: 468px;
+        font-size: .9em;
+    }
+
+    .tabla1{
+        margin-top: 90.5px;
+    }
+
+    .tabla2{
+        margin-top: 290.4px;
+    }
+
+    td{
+        padding: 0 21.9px;
+        margin: 6.5px;
+        
+    }
+    
+    .quienessomos p{
+        font-size: .8em;
+    }
+
+    .quienessomos img{
+        width: 500px;
+        margin-top: 40px;
+    }
+    
+    .nombre, .email{
+        width: 46.5%;
+    }
+
+    .email{
+        margin-left: 53.5%;
+    }
+
+    .fondo-tallas{
+        height: 250vh;
+    }
+
+    footer{
+        font-size: .8em;
+    }
+}

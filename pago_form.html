@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="Artic_ico.ico">
+    <title>ArticShop - Pago</title>
+</head>
+<body>
+    <header class="header_pasarela">
+        <a href="./index.html">
+            <img src="Artic_ico.jpg" class="header_img header_img--pasarela" alt="Artic_ico.jpg">
+            <h1>RTIC SHOP</h1>
+        </a>
+        <ul  class="estado_proceso">
+            <li>
+                <div>
+                    <span>1</span>
+                </div> ENTREGA</li>
+            <li class="border-bottom">
+                <div>
+                    <span>2</span>
+                </div>  PAGO</li>
+            <li>
+                <div>
+                    <span>3</span>
+                </div>  PEDIDO COMPLETADO</li>
+        </ul>
+    </header>
+    <hr class="pasarela-hr">
+
+    <main>
+        <section class="pago-form">
+            <form action="completado.html" class="pasarela pasarela-pago">
+                <input type="text" placeholder="TITULAR DE LA TARJETA *" required pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,25}">
+                <input type="tel" placeholder="NUMERO DE LA TARJETA *" required pattern="[0-9]{16}">
+                <input type="tel" placeholder="MM / YY *" required pattern="[0-9]{2}/[0-9]{2}">
+                <input type="tel" placeholder="CVV *" required pattern="[0-9]{3}">
+                <input type="submit" class="submit submit2" value="ENVIAR">
+            </form>
+        </section>
+        <section class="resumen-pago">
+            <ul>
+                <h2>NOMBRE ARTICULO</h2>
+                <img src="./images/utilidades/articulo-anonimo.jpg" alt="articulo-anonimo.jpg">
+                <p>
+                    IMPORTE: <br>
+                    XX.XX
+                </p>
+            </ul>
+        </section>
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+
+
+    <footer class="divisions-footer">
+        <div class="footer__secciones">
+            <div class="seccion ayuda">
+                <span>AYUDA</span>
+                <ul>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">C&oacute;mo devolver</a></li>
+                    <li><a href="#">C&oacute;mo comprar</a></li>
+                </ul>
+            </div>
+            <div class="seccion atencion-cliente">
+                <span>ATENCI&Oacute;N AL CLIENTE</span>
+                <ul>
+                    <li>Correo: <a href="mailto:pablogervilla123@gmail.com">pablogervilla123@gmail.com</a></li>
+                    <li>Tel: 633610338</li>
+                    <li><a href="./index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="seccion empresa">
+                <span>EMPRESA</span>
+                <ul>
+                    <li><a href="./index.html#qsomos">Qui&eacute;nes somos</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                </ul>
+            </div>
+            <div class="seccion logo">
+                <img src="./Logo_completo.jpg" alt="">
+            </div>
+        </div>
+        
+        <div class="footer__barrainferior">
+            <ul>
+                <li><a href="#">Pol&iacute;tica de privacidad</a></li>
+                <li><a href="#">Condiciones de compra</a></li>
+                <li><a href="#">Pol&iacute;tica de cookies</a></li>
+                <li class="copy"><span>&copy; Todos los derechos reservados</span></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="Artic_ico.ico">
+    <title>ArticShop - Chaquetas</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="Artic_ico.jpg" class="header_img" alt="Artic_ico.jpg">
+            <h1>RTIC SHOP</h1>
+        </a>
+        <div class="lupa">
+            <img src="./images/utilidades/lupa.jpg" alt="lupa.jpg" class="lupaimg">
+        </div>
+        <input type="text" name="buscador" class="buscador" placeholder="BUSCAR">
+        <div class="perfil-carrito">
+            <img src="./images/utilidades/perfil.jpg" alt="perfil.jpg">
+            <img src="./images/utilidades/bolsa.jpg" alt="bolsa.jpg">
+        </div>
+    </header>
+
+
+    
+
+    <!-- MENU -->
+
+
+
+
+    <nav class="divisions--menu">
+        <ul class="menu ">
+            <li><a href="./index.html">INICIO</a></li>
+            <li><a href="./pantalones.html">PANTALONES</a></li>
+            <li><a href="./chaquetas.html">CHAQUETAS</a></li>
+            <li class="desplegable"><a href="./sudaderas.html">SUDADERAS</a>
+                <ul>
+                    <li><a class="link-desplegable link-desplegable2" href="sudaderas.html#negro">NEGRAS</a></li>
+                    <li><a class="link-desplegable link-desplegable2" href="sudaderas.html#morada">MORADAS</a></li>
+                    <li><a class="link-desplegable link-desplegable2" href="sudaderas.html#burgundy">BURGUNDY</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+
+
+
+    <!-- GUIA TALLAS -->
+
+
+
+
+
+    <label for="tallas" class="guiatallas"> <img src="./images/utilidades/regla.jpg" alt="regla.jpg" class="regla"> Gu&iacute;a de tallas</label>
+    <input type="checkbox" name="checkbox" id="tallas" hidden>
+    <div class="fondo-tallas">
+        <div class="tallas">
+            <label for="tallas"><img class="cruz" src="./images/utilidades/cruz.jpg" alt="cruz.jpg" ></label>
+            <h2>GU&Iacute;A DE TALLAS</h2>
+            <table class="tabla1">
+                <tr>
+                    <th colspan="7">PARTES DE ARRIBA / CHAQUETAS / SUDADERAS</th>
+                </tr>
+                <tr>
+                    <td class="celda-ancha">Talla</td>
+                    <td>XS</td>
+                    <td>S</td>
+                    <td>M</td>
+                    <td>L</td>
+                    <td>XL</td>
+                    <td>XXL</td>
+                </tr>
+                <tr>
+                    <td class="celda-ancha">Pecho (cm)</td>
+                    <td>82</td>
+                    <td>86</td>
+                    <td>90</td>
+                    <td>94</td>
+                    <td>98</td>
+                    <td>102</td>
+        
+                </tr>
+                <tr>
+                    <td class="celda-ancha">Cintura (cm)</td>
+                    <td>64</td>
+                    <td>68</td>
+                    <td>72</td>
+                    <td>76</td>
+                    <td>80</td>
+                    <td>84</td>
+                </tr>
+                <tr>
+                    <td class="celda-ancha">Cadera (cm)</td>
+                    <td>90</td>
+                    <td>94</td>
+                    <td>98</td>
+                    <td>102</td>
+                    <td>106</td>
+                    <td>110</td>
+                </tr>
+            </table>
+            <table class="tabla2">
+                <tr>
+                    <th colspan="7">PARTES DE ABAJO</th>
+                </tr>
+                <tr>
+                    <td class="celda-ancha">Talla</td>
+                    <td>XS</td>
+                    <td>S</td>
+                    <td>M</td>
+                    <td>L</td>
+                    <td>XL</td>
+                    <td>XXL</td>
+                </tr>
+                <tr>
+                    <td class="celda-ancha">Cintura (cm)</td>
+                    <td>64</td>
+                    <td>68</td>
+                    <td>72</td>
+                    <td>76</td>
+                    <td>83</td>
+                    <td>87</td>
+        
+                </tr>
+                <tr>
+                    <td class="celda-ancha">Cadera (cm)</td>
+                    <td>90</td>
+                    <td>94</td>
+                    <td>98</td>
+                    <td>102</td>
+                    <td>106</td>
+                    <td>110</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+    <!-- ROPA -->
+
+
+
+
+    <main class="ropa">
+        <h2>CHAQUETAS</h2>        
+        <section class="articulos">
+            <div class="articulo">
+                <input class="checkbox-img" type="checkbox" id="checkbox-img1" hidden>
+                <label for="checkbox-img1"><img src="./images/chaquetas/p1.jpg" alt="p1.jpg"></label>
+                <div class="informacion-articulo">
+                    <label for="checkbox-img1" class="cruz-blanca"><img src="./images/utilidades/cruz-blanca.jpg" alt="cruz-blanca.jpg"></label>
+                    
+                    <div class="nombre-ropa">
+                        <span class="texto-ropa">TEMPEST CHAQUETA SNOW GOLD</span>
+                    </div>
+                    <br>
+                    <span class="precio">85,95€</span>
+                    <br>
+                    <select class="talla" name="talla" id="talla1">
+                        <optgroup label="Tallas">                            
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="S">M</option>
+                            <option value="S">L</option>
+                            <option value="S">XL</option>
+                            <option value="XXL">XXL</option>
+                        </optgroup>
+                    </select>
+                    <a class="comprar" href="entrega_form.html">COMPRAR</a>                    
+                </div>
+            </div>
+    
+            <div class="articulo">
+                <input class="checkbox-img" type="checkbox" id="checkbox-img2" hidden>
+                <label for="checkbox-img2"><img src="./images/chaquetas/p2.jpg" alt="p2.jpg"></label>
+                <div class="informacion-articulo">
+                    <label for="checkbox-img2" class="cruz-blanca"><img src="./images/utilidades/cruz-blanca.jpg" alt="cruz-blanca.jpg"></label>
+                    
+                    <div class="nombre-ropa">
+                        <span class="texto-ropa">WYLIE CHAQUETA SNOW BLACK</span>
+                    </div>
+                    <br>
+                    <span class="precio">129,95€</span>
+                    <br>
+                    <select class="talla" name="talla" id="talla2">
+                        <optgroup label="Tallas">                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="S">M</option>
+                            <option value="S">L</option>
+                            <option value="S">XL</option>
+                            <option value="XXL">XXL</option>
+                        </optgroup>
+                    </select>
+                    <a class="comprar" href="entrega_form.html">COMPRAR</a>
+                </div>
+            </div>
+    
+            <div class="articulo">
+                <input class="checkbox-img" type="checkbox" id="checkbox-img3" hidden>
+                <label for="checkbox-img3"><img src="./images/chaquetas/p3.jpg" alt="p3.jpg"></label>
+                <div class="informacion-articulo">
+                    <label for="checkbox-img3" class="cruz-blanca"><img src="./images/utilidades/cruz-blanca.jpg" alt="cruz-blanca.jpg"></label>
+                    
+                    <div class="nombre-ropa">
+                        <span class="texto-ropa">WYLIE CHAQUETA SNOW ORANGE</span>
+                    </div>
+                    <br>
+                    <span class="precio">129,95€</span>
+                    <br>
+                    <select class="talla" name="talla" id="talla3">
+                        <optgroup label="Tallas">                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="S">M</option>
+                            <option value="S">L</option>
+                            <option value="S">XL</option>
+                            <option value="XXL">XXL</option>
+                        </optgroup>
+                    </select>
+                    <a class="comprar" href="entrega_form.html">COMPRAR</a>
+                </div>
+            </div>
+    
+            <div class="articulo">
+                <input class="checkbox-img" type="checkbox" id="checkbox-img4" hidden>
+                <label for="checkbox-img4"><img src="./images/chaquetas/p4.jpg" alt="p4.jpg"></label>
+                <div class="informacion-articulo">
+                    <label for="checkbox-img4" class="cruz-blanca"><img src="./images/utilidades/cruz-blanca.jpg" alt="cruz-blanca.jpg"></label>
+                    
+                    <div class="nombre-ropa">
+                        <span class="texto-ropa">WYLIE CHAQUETA SNOWBOARD ROCK</span>
+                    </div>
+                    <br>
+                    <span class="precio">135,95€</span>
+                    <br>
+                    <select class="talla" name="talla" id="talla4">
+                        <optgroup label="Tallas">                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="S">M</option>
+                            <option value="S">L</option>
+                            <option value="S">XL</option>
+                            <option value="XXL">XXL</option>
+                        </optgroup>
+                        
+                    </select>
+                    <a class="comprar" href="entrega_form.html">COMPRAR</a>
+                </div>
+            </div>
+    
+            <div class="articulo">
+                <input class="checkbox-img" type="checkbox" id="checkbox-img5" hidden>
+                <label for="checkbox-img5"><img src="./images/chaquetas/p5.jpg" alt="p5.jpg"></label>
+                <div class="informacion-articulo">
+                    <label for="checkbox-img5" class="cruz-blanca"><img src="./images/utilidades/cruz-blanca.jpg" alt="cruz-blanca.jpg"></label>
+                    
+                    <div class="nombre-ropa">
+                        <span class="texto-ropa">WYLIE CHAQUETA SNOWBOARD BURGUNDY</span>
+                    </div>
+                    <br>
+                    <span class="precio">129,95€</span>
+                    <br>
+                    <select class="talla" name="talla" id="talla5">
+                        <optgroup label="Tallas">                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="S">M</option>
+                            <option value="S">L</option>
+                            <option value="S">XL</option>
+                            <option value="XXL">XXL</option>
+                        </optgroup>
+                    </select>
+                    <a class="comprar" href="entrega_form.html">COMPRAR</a>
+                </div>
+            </div>
+    
+            <div class="articulo">
+                <input class="checkbox-img" type="checkbox" id="checkbox-img6" hidden>
+                <label for="checkbox-img6"><img src="./images/chaquetas/p6.jpg" alt="p6.jpg"></label>
+                <div class="informacion-articulo">
+                    <label for="checkbox-img6" class="cruz-blanca"><img src="./images/utilidades/cruz-blanca.jpg" alt="cruz-blanca.jpg"></label>
+                    
+                    <div class="nombre-ropa">
+                        <span class="texto-ropa">ADEPT CHAQUETA SNOW PAIN METAL BLUE</span>
+                    </div>
+                    <br>
+                    <span class="precio">129,95€</span>
+                    <br>
+                    <select class="talla" name="talla" id="talla6">
+                        <optgroup label="Tallas">                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="S">M</option>
+                            <option value="S">L</option>
+                            <option value="S">XL</option>
+                            <option value="XXL">XXL</option>
+                        </optgroup>
+                    </select>
+                    <a class="comprar" href="entrega_form.html">COMPRAR</a>
+                </div>
+            </div>
+    
+            <div class="articulo">
+                <input class="checkbox-img" type="checkbox" id="checkbox-img7" hidden>
+                <label for="checkbox-img7"><img src="./images/chaquetas/p7.jpg" alt="p7.jpg"></label>
+                <div class="informacion-articulo">
+                    <label for="checkbox-img7" class="cruz-blanca"><img src="./images/utilidades/cruz-blanca.jpg" alt="cruz-blanca.jpg"></label>
+                    
+                    <div class="nombre-ropa">
+                        <span class="texto-ropa">ADEPT CHAQUETA SNOW PAIN ORANGE</span>
+                    </div>
+                    <br>
+                    <span class="precio">129,95€</span>
+                    <br>
+                    <select class="talla" name="talla" id="talla7">
+                        <optgroup label="Tallas">                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="S">M</option>
+                            <option value="S">L</option>
+                            <option value="S">XL</option>
+                            <option value="XXL">XXL</option>
+                        </optgroup>
+                    </select>
+                    <a class="comprar" href="entrega_form.html">COMPRAR</a>
+                </div>
+            </div>
+    
+            <div class="articulo">
+                <input class="checkbox-img" type="checkbox" id="checkbox-img8" hidden>
+                <label for="checkbox-img8"><img src="./images/chaquetas/p8.jpg" alt="p8.jpg"></label>
+                <div class="informacion-articulo">
+                    <label for="checkbox-img8" class="cruz-blanca"><img src="./images/utilidades/cruz-blanca.jpg" alt="cruz-blanca.jpg"></label>
+                    
+                    <div class="nombre-ropa">
+                        <span class="texto-ropa">WYLIE CHAQUETA SNOWBOARD OLIVE GREEN</span>
+                    </div>
+                    <br>
+                    <span class="precio">129,95€</span>
+                    <br>
+                    <select class="talla" name="talla" id="talla8">
+                        <optgroup label="Tallas" >                            
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="S">M</option>
+                            <option value="S">L</option>
+                            <option value="S">XL</option>
+                            <option value="XXL">XXL</option>
+                        </optgroup>
+                    </select>
+                    <a class="comprar" href="entrega_form.html">COMPRAR</a>
+                </div>
+            </div>
+    
+        </section>
+
+
+        
+        <!-- TALLAS -->
+
+
+
+
+    </main>
+
+    <footer class="divisions-footer">
+        <div class="footer__secciones">
+            <div class="seccion ayuda">
+                <span>AYUDA</span>
+                <ul>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">C&oacute;mo devolver</a></li>
+                    <li><a href="#">C&oacute;mo comprar</a></li>
+                </ul>
+            </div>
+            <div class="seccion atencion-cliente">
+                <span>ATENCI&Oacute;N AL CLIENTE</span>
+                <ul>
+                    <li>Correo: <a href="mailto:pablogervilla123@gmail.com">pablogervilla123@gmail.com</a></li>
+                    <li>Tel: 633610338</li>
+                    <li><a href="./index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="seccion empresa">
+                <span>EMPRESA</span>
+                <ul>
+                    <li><a href="./index.html#qsomos">Qui&eacute;nes somos</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                </ul>
+            </div>
+            <div class="seccion logo">
+                <img src="./Logo_completo.jpg" alt="">
+            </div>
+        </div>
+        
+        <div class="footer__barrainferior">
+            <ul>
+                <li><a href="#">Pol&iacute;tica de privacidad</a></li>
+                <li><a href="#">Condiciones de compra</a></li>
+                <li><a href="#">Pol&iacute;tica de cookies</a></li>
+                <li class="copy"><span>&copy; Todos los derechos reservados</span></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
